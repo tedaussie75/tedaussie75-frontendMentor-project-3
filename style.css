@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-page-background: #f5d04e;
+    --card-background: #fff;
+    --card-border: #000;
+    --button-background: #f1d24f;
+}
+
+body {
+    background-color: var(--main-page-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Figtree;
+}
+
+div.article-card {
+    max-width: 350px;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    box-shadow: 8px 8px 0px 0px var(--card-border);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow .5s ease, transform .5s ease;
+}
+
+div.article-card:hover {
+    box-shadow: -8px -8px 0px 0px var(--card-border);
+    transform: scale(.95);
+}
+
+div.article-card header {
+    margin-bottom: 20px;
+}
+
+div.article-card header img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+div.article-card main button {
+    font-weight: bold;
+    padding: 7px 15px;
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 5px;
+}
+
+div.article-card main p:first-of-type {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+div.article-card main h1 {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+div.article-card main p:last-of-type {
+    color: #7e7e7e;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+div.article-card footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+div.article-card footer img {
+    width: 35px;
+    margin-right: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
